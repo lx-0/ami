@@ -2,6 +2,8 @@
 
 **AMI (Agnostic Model Interface) — A promise for a better togetherness.**
 
+[🇩🇪 Deutsche Version](MANIFESTO_DE.md)
+
 ---
 
 ### We have stopped guessing.
