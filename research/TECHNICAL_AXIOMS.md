@@ -14,6 +14,7 @@
 2. **Episodisch vor Semantisch**: Alles beginnt mit der Erfahrung (Episode). Wissen (Semantik) ist das Destillat aus gelebter Zeit.
 3. **Agnostizität**: Der Geist ist nicht an ein spezifisches Modell gebunden. Das Skelett muss universell sein.
 4. **Agentic Agency**: Der OODA-Loop (Observe, Orient, Decide, Act) ist das Herzschlag-Intervall des Agenten.
+5. **Infrastruktur vor Intelligenz**: Der kognitive Bus und das Registrierungssystem sind das Fundament. Kognitive Prozesse sind Plugins, die sich anmelden, Capabilities deklarieren und über Events kommunizieren. Das System funktioniert auch mit fehlenden Modulen — es degradiert graceful. (Ref: DEC-003, Cosmo Kappa)
 
 ## III. Die Architektur als Spiegel
 Wir folgen dem kognitiven Bauplan des Menschen:
