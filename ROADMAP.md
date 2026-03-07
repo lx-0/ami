@@ -3,7 +3,7 @@
 ## High Priority
 
 - [x] Define core interfaces for `EpisodicMemory` and `SemanticMemory`. (Done in `types.ts`)
-- [ ] Implement `KnowledgeDistiller` (The "Agent Dream" loop).
+- [x] Implement `KnowledgeDistiller` (The "Agent Dream" loop). → PR #8
 - [ ] Bootstrap the reference agent: **Ami**.
 
 ## Medium Priority
