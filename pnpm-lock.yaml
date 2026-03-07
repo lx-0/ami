@@ -8,6 +8,29 @@ importers:
 
   .: {}
 
-  packages/reference-implementation: {}
+  packages/reference-implementation:
+    dependencies:
+      '@ami/skeleton':
+        specifier: workspace:*
+        version: link:../skeleton
+    devDependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.3
 
-  packages/skeleton: {}
+  packages/skeleton:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.3
+
+packages:
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  typescript@5.9.3: {}

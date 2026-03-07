@@ -1,13 +1,21 @@
 {
-  "name": "reference-implementation",
+  "name": "@ami/reference-implementation",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Reference implementation of AMI cognitive components.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "node --test __tests__/*.test.js"
   },
-  "keywords": [],
+  "keywords": ["ami", "cognitive", "implementation"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@ami/skeleton": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
