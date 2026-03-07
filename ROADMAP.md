@@ -3,10 +3,11 @@
 ## High Priority (OS Foundation — DEC-003)
 
 - [x] Define core interfaces for `EpisodicMemory` and `SemanticMemory`. (Done in `types.ts`)
-- [ ] Define `CognitiveEvent` type (unified event format for the bus).
-- [ ] Define `CognitiveRegistry` interface (register/discover capabilities).
-- [ ] Define `CognitiveBus` interface (emit/subscribe events).
-- [ ] Refactor `KnowledgeDistiller` reference-implementation as a registered processor (listens for `episodes.batch`, emits `fact.created`).
+- [x] Define `CognitiveEvent` type (unified event format for the bus). (Done in `types.ts`, PR #10)
+- [x] Define `CognitiveRegistry` interface (register/discover capabilities). (Done in `types.ts`, PR #10)
+- [x] Define `CognitiveBus` interface (emit/subscribe events). (Done in `types.ts`, PR #10)
+- [x] Refactor `KnowledgeDistiller` reference-implementation as a registered processor (listens for `episodes.batch`, emits `fact.created`). (Done: `DistillerModule` + `ReferenceCognitiveBus`)
+- [ ] Implement `CognitiveRegistry` reference (register/init/discover modules).
 
 ## High Priority (Cognitive Modules)
 
