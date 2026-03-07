@@ -1,13 +1,24 @@
 {
-  "name": "skeleton",
+  "name": "@ami/skeleton",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Core interfaces for the Agent Mind Interface cognitive skeleton.",
+  "main": "dist/types.js",
+  "types": "dist/types.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"No tests — interface-only package\" && exit 0"
   },
-  "keywords": [],
+  "keywords": ["ami", "cognitive", "interfaces"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "default": "./dist/types.js"
+    }
+  }
 }
