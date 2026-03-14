@@ -6,16 +6,20 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "node --test __tests__/*.test.js"
+    "test": "node --test __tests__/*.test.js",
+    "demo": "tsx src/demo.ts",
+    "dev": "tsx --watch src/demo.ts"
   },
   "keywords": ["ami", "cognitive", "implementation"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "@ami/skeleton": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "@types/node": "^20.0.0"
   }
 }

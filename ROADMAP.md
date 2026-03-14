@@ -12,7 +12,7 @@
 ## High Priority (Cognitive Modules)
 
 - [x] Implement `KnowledgeDistiller` (The "Agent Dream" loop). (Done in `reference-implementation`)
-- [ ] Bootstrap the reference agent: **Ami**.
+- [x] Bootstrap the reference agent: **Ami**. (Done: `Ami` class + demo + capability-based architecture)
 
 ## Medium Priority
 

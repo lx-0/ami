@@ -9,3 +9,5 @@ export { ReferenceCognitiveBus } from './cognitive-bus.js';
 export { ReferenceCognitiveRegistry } from './cognitive-registry.js';
 export { DistillerModule } from './distiller-module.js';
 export type { DistillerModuleConfig } from './distiller-module.js';
+export { Ami } from './ami.js';
+export type { AmiConfig } from './ami.js';
