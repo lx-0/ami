@@ -8,7 +8,9 @@
     "build": "tsc",
     "test": "node --test __tests__/*.test.js",
     "demo": "tsx src/demo.ts",
-    "dev": "tsx --watch src/demo.ts"
+    "demo:context": "tsx src/context-demo.ts",
+    "dev": "tsx --watch src/demo.ts",
+    "dev:context": "tsx --watch src/context-demo.ts"
   },
   "keywords": ["ami", "cognitive", "implementation"],
   "author": "",

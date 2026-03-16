@@ -185,3 +185,20 @@ export interface CognitiveRegistry {
 export interface CognitiveLoop {
     step(): Promise<void>;
 }
+
+// ─── Context Management ────────────────────────────────────────────────────
+
+/**
+ * Context window maintained by the ContextManager.
+ * Represents the current attention focus and relevant information.
+ */
+export interface ContextWindow {
+    /** Recent messages in the attention window */
+    recentMessages: Message[];
+    /** Relevant facts from semantic memory */
+    relevantFacts: Fact[];
+    /** Current attention topic/theme */
+    focusTopic?: string;
+    /** Timestamp of last context update */
+    lastUpdated: number;
+}
