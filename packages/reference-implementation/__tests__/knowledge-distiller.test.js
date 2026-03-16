@@ -1,9 +1,9 @@
-const { describe, it } = require('node:test');
-const assert = require('node:assert/strict');
-const {
+import { describe, it } from 'node:test';
+import assert from 'node:assert/strict';
+import {
     ReferenceKnowledgeDistiller,
     PatternExtractionStrategy,
-} = require('../dist/index.js');
+} from '../dist/index.js';
 
 /**
  * Helper to create a Message.
