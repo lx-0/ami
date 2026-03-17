@@ -16,6 +16,6 @@
 
 ## Medium Priority
 
-- [ ] `ContextManager` implementation (attention/relevance filtering).
-- [ ] `CapabilitiesManager` for tool pre-selection.
+- [ ] `ContextManager` implementation (attention/relevance filtering). *(In PR #14 - waiting for review)*
+- [x] `CapabilitiesManager` for tool pre-selection.
 - [ ] Define Sensor and Actuator capability contracts.
