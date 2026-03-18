@@ -1,7 +1,7 @@
-const { describe, it } = require('node:test');
-const assert = require('node:assert/strict');
+import { describe, it } from 'node:test';
+import assert from 'node:assert/strict';
 
-const { DistillerModule, ReferenceCognitiveBus } = require('../dist/index.js');
+import { DistillerModule, ReferenceCognitiveBus } from '../dist/index.js';
 
 /**
  * Stub strategy that returns one fact per message.

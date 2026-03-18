@@ -1,6 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert');
-const { ReferenceCognitiveBus, ReferenceCognitiveRegistry } = require('../dist/index.js');
+import test from 'node:test';
+import assert from 'node:assert';
+import { ReferenceCognitiveBus, ReferenceCognitiveRegistry } from '../dist/index.js';
 
 // Mock cognitive module for testing
 class MockSensorModule {
