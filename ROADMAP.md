@@ -16,6 +16,6 @@
 
 ## Medium Priority
 
-- [ ] `ContextManager` implementation (attention/relevance filtering).
+- [x] `ContextManager` implementation (attention/relevance filtering). (Done: `ReferenceContextManager` + `ContextManagerModule` + demo)
 - [ ] `CapabilitiesManager` for tool pre-selection.
 - [ ] Define Sensor and Actuator capability contracts.
