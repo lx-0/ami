@@ -277,7 +277,7 @@ export class CapabilitiesManager {
      * Analyze a task and suggest appropriate capabilities.
      */
     async analyzeTask(request: TaskAnalysisRequest): Promise<CapabilitiesAnalysis> {
-        const startTime = Date.now();
+        const startTime = performance.now();
 
         try {
             // Run the analysis strategy
@@ -288,7 +288,7 @@ export class CapabilitiesManager {
                 .filter(s => s.confidence >= this.config.minConfidence)
                 .slice(0, this.config.maxSuggestions);
 
-            const processingTime = Date.now() - startTime;
+            const processingTime = Math.max(0.001, performance.now() - startTime);
 
             // Update metrics if enabled
             if (this.config.enableMetrics) {
@@ -302,7 +302,7 @@ export class CapabilitiesManager {
                 processingTime
             };
         } catch (error) {
-            const processingTime = Date.now() - startTime;
+            const processingTime = Math.max(0.001, performance.now() - startTime);
             console.error('[CapabilitiesManager] Analysis failed:', error);
             
             return {

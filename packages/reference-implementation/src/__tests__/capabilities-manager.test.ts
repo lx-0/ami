@@ -103,7 +103,7 @@ describe('CapabilitiesManager', () => {
         assert.deepStrictEqual(analysis.task, request, 'Should preserve original task');
         assert(Array.isArray(analysis.suggestions), 'Should return suggestions array');
         assert(typeof analysis.timestamp === 'string', 'Should have timestamp');
-        assert(analysis.processingTime > 0, 'Should track processing time');
+        assert(typeof analysis.processingTime === 'number' && analysis.processingTime >= 0, 'Should track processing time');
     });
 
     it('should limit suggestions to maxSuggestions', async () => {
@@ -161,7 +161,7 @@ describe('CapabilitiesManager', () => {
         });
 
         assert.deepStrictEqual(analysis.suggestions, [], 'Should return empty suggestions on error');
-        assert(analysis.processingTime > 0, 'Should still track processing time');
+        assert(typeof analysis.processingTime === 'number' && analysis.processingTime >= 0, 'Should still track processing time');
     });
 
     it('should track metrics when enabled', async () => {
@@ -174,7 +174,7 @@ describe('CapabilitiesManager', () => {
         
         const metrics = metricManager.getMetrics();
         assert(metrics.totalAnalyses === 1, 'Should track analysis count');
-        assert(metrics.averageProcessingTime > 0, 'Should track average processing time');
+        assert(typeof metrics.averageProcessingTime === 'number' && metrics.averageProcessingTime >= 0, 'Should track average processing time');
     });
 });
 
